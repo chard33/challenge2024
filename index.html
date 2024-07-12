@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <section class="sec-logo">
+                <img src="./imagenes/Logo.png" alt="logo-alura">
+            </section>
+            <section class="sec-enc">
+                <div class="ent-text">
+                    <textarea class="enc-text" rows="20" cols="50" placeholder="Ingrese el texto aqui" onclick="cam_color()" onkeyup="val_txtA()"></textarea>
+                </div>
+                <div>
+                    <img src="./imagenes/exc.png" alt="logo-excla">
+                    <p>Solo letras minusculas y sin acentos.</p>
+                    <div class="enc-btn">
+                        <button class="btn-uno" onclick="encriptar()">
+                            Encriptar
+                        </button>
+                        <button class="btn-dos" onclick="desencriptar()" disabled="true">
+                            Desencriptar
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="sec-res">
+                <div class="sin-txt">
+                    <img src="./imagenes/Mun.png" alt="logo-muñeco">
+                    <h4>Ningun mensaje fue encontrado</h4>
+                    <p>Ingrese el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <div class="con-txt" style="display:none;">
+                    <textarea disabled="true" class="tx_res"></textarea>
+                    <button onclick="copiar()">
+                        Copiar
+                    </button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Carlos Miranda - 2024 - Alura.</p>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>
