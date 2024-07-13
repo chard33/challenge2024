@@ -24,7 +24,12 @@ body{
     min-height: 100%;
 }
 
-@media (width >= 768px){
+textarea {
+    text-align: justify;
+    white-space: normal;
+}
+
+@media only screen and (min-device-width: 768px) {
     
     
     main{
@@ -59,9 +64,9 @@ body{
         height:85%;
         width:100%;
     }
-    
-    .enc-text{
-        width: 100%;
+
+    textarea{
+        width: 90%;
         box-sizing: border-box;
         height: 88%;
         margin-top: 8%;
@@ -70,6 +75,10 @@ body{
         font-family: var(--font-pri);
         font-size: 1.5rem;
         outline: none;
+    }
+
+    .tx_res{
+        background-color: rgb(255, 255, 255);
     }
     
     .sec-enc div p{
@@ -121,29 +130,16 @@ body{
         height: auto;
         max-width: 70%;
       }
-    
-    .tx_res{
-        width: 90%;
-        box-sizing: border-box;
-        height: 25rem;
-        margin-top: 8%;
-        resize: none;
-        border: none;
-        font-family: var(--font-pri);
-        font-size: 1.5rem;
-        outline: none;
-        background-color: white;
-    }
-    
+      
     .con-txt button{
-        width: 90%;
+        width: 100%;
         height: 2.5rem;
         border-radius: 13px;
         border: .1rem solid var(--color-pri);
     }
 }
 
-@media (width <= 767px){
+@media only screen and (max-device-width: 768px){
     body{
         background-color: black;
     }
