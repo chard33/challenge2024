@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
-    margin:0; 
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 :root {
@@ -10,18 +10,22 @@
     --color-sec: #ffffff;
 
     --font-pri: "Inter", sans-serif;
-  }
-
-.red::placeholder{
-    color:red;
 }
 
-body{
-    margin:0;
-    padding:0;
-    width:100%;
-    height: 100%;
-    min-height: 100%;
+.red::placeholder {
+    color: red;
+}
+
+/* body{
+    
+} */
+
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 textarea {
@@ -29,118 +33,318 @@ textarea {
     white-space: normal;
 }
 
-@media only screen and (min-device-width: 768px) {
-    
-    
-    main{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height:94vh;
-    }
-    
-    footer{
-        height:6vh;
-        background-color: var(--color-pri);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-    }
-    
-    section{
-        height: 90%;
-    }
-    
-    .sec-logo{
-        width: 10%;
-    }
-    
-    .sec-enc{
-        width: 45%;
-    }
-    
-    .ent-text{
-        height:85%;
-        width:100%;
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 94vh;
+}
+
+footer {
+    width: 100%;
+    height: 6vh;
+    background-color: var(--color-pri);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+section {
+    height: 90%;
+}
+
+.sec-logo {
+    width: 10%;
+}
+
+.sec-enc {
+    width: 45%;
+}
+
+.ent-text {
+    height: 85%;
+    width: 100%;
+}
+
+textarea {
+    width: 90%;
+    box-sizing: border-box;
+    height: 88%;
+    margin-top: 8%;
+    resize: none;
+    border: none;
+    font-family: var(--font-pri);
+    font-size: 1.5rem;
+    outline: none;
+}
+
+.tx_res {
+    background-color: rgb(255, 255, 255);
+    font-family: var(--font-pri);
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 2vh;
+    min-height: 65vh;
+    max-height: 65vh;
+    text-align: justify;
+    display: block;
+    overflow: auto;
+}
+
+.sec-enc div p {
+    color: #495057;
+    font-family: var(--font-pri);
+    font-size: .6rem;
+    display: inline-block;
+}
+
+.sec-enc div img {
+    width: .6rem;
+    color: #495057;
+}
+
+.enc-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.enc-btn button {
+    width: 48%;
+    height: 2.5rem;
+    border-radius: 13px;
+    border: .1rem solid var(--color-pri);
+}
+
+.btn-uno {
+    background-color: var(--color-pri);
+    color: white;
+}
+
+/* .contenedor{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr auto;
+} */
+
+.sec-res {
+    width: 25%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--font-pri);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 18px 6px rgba(0, 0, 0, 0.5);
+}
+
+.sin-txt p {
+    margin-top: .5rem;
+    margin: auto;
+    width: 80%;
+    font-size: small;
+}
+
+img {
+    height: auto;
+    max-width: 70%;
+}
+
+.con-txt {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.con-txt button {
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 13px;
+    border: .1rem solid var(--color-pri);
+    margin-top: 4vh;
+}
+
+.con-txt textarea {
+    margin-top: 1%;
+}
+
+@media (max-width: 768px) and (min-width: 334px) {
+
+    footer {
+        position: fixed;
+        bottom: 0pt;
+        left: 0pt;
     }
 
-    textarea{
-        width: 90%;
-        box-sizing: border-box;
-        height: 88%;
-        margin-top: 8%;
-        resize: none;
-        border: none;
-        font-family: var(--font-pri);
-        font-size: 1.5rem;
-        outline: none;
+    main {
+        flex-direction: column;
+        padding: 0px 12px;
+        overflow: auto;
     }
 
-    .tx_res{
-        background-color: rgb(255, 255, 255);
-    }
-    
-    .sec-enc div p{
-        color: #495057;
-        font-family: var(--font-pri);
-        font-size: .6rem;
-        display: inline-block;
-    }
-    
-    .sec-enc div img{
-        width: .6rem;
-        color: #495057;
-    }
-    
-    .enc-btn{
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .enc-btn button{
-        width: 48%;
-        height: 2.5rem;
-        border-radius: 13px;
-        border: .1rem solid var(--color-pri);
-    }
-    
-    .btn-uno{
-        background-color: var(--color-pri);
-        color: white;
-    }
-    
-    .sec-res{
-        width: 25%;
-        display: flex;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-        font-family: var(--font-pri);
-        border-radius: 1rem;
-        box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.5);
-    }
-    
-    .sin-txt p{
-        margin-top: .5rem;
-        font-size: small;
-    }
-    
-    img {
-        height: auto;
-        max-width: 70%;
-      }
-      
-    .con-txt button{
+    .sec-logo {
         width: 100%;
-        height: 2.5rem;
-        border-radius: 13px;
-        border: .1rem solid var(--color-pri);
+        display: flex;
+        height: 10%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .sec-logo img {
+        height: 40%;
+        vertical-align: middle;
+    }
+
+    .sec-enc {
+        width: 100%;
+        display: flex;
+        height: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .con-txt button {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    .ent-text {
+        width: 90%;
+        display: flex;
+    }
+
+    .ent-btn {
+        width: 90%;
+    }
+
+    .enc-text {
+        margin: auto;
+    }
+
+    .sec-res {
+        width: 90%;
+        margin-bottom: 2%;
+        height: auto;
+    }
+
+    .tx_res {
+        min-height: 10vh;
+        max-height: 40vh;
+    }
+
+    .sin-txt {
+        margin: auto;
+        width: 100%;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .sin-txt img {
+        display: none;
+    }
+
+    .con-txt {
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .con-txt textarea {
+        height: auto;
     }
 }
 
-@media only screen and (max-device-width: 768px){
-    body{
-        background-color: black;
+@media (max-width: 333px) {
+    footer {
+        position: fixed;
+        bottom: 0pt;
+        left: 0pt;
     }
-}
+
+    main {
+        flex-direction: column;
+        padding: 0px 12px;
+        overflow: auto;
+    }
+
+    .sec-logo {
+        width: 100%;
+        display: flex;
+        height: 10%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .sec-logo img {
+        height: 40%;
+        vertical-align: middle;
+    }
+
+    .sec-enc {
+        width: 100%;
+        display: flex;
+        height: 70%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 10vh;
+    }
+
+    .con-txt button {
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+    }
+
+    .ent-text {
+        width: 90%;
+        display: flex;
+    }
+
+    .ent-btn {
+        width: 90%;
+    }
+
+    .enc-text {
+        margin: auto;
+    }
+
+    .sec-res {
+        width: 90%;
+        margin-bottom: 2%;
+        height: auto;
+    }
+
+    .tx_res {
+        min-height: 10vh;
+        max-height: 40vh;
+    }
+
+    .sin-txt {
+        margin: auto;
+        width: 100%;
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+    }
+
+    .sin-txt img {
+        display: none;
+    }
+
+    .con-txt {
+        margin-top: 3%;
+        margin-bottom: 2%;
+    }
+
+    .con-txt textarea {
+        height: auto;
+    }
+
+    .enc-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enc-btn button {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+} 

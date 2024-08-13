@@ -14,7 +14,7 @@ var arr = {
 
 function copiar(){
 
-    navigator.clipboard.writeText(txt_res.value);
+    navigator.clipboard.writeText(txt_res.textContent);
 }
 
 function cam_color(){
@@ -49,6 +49,6 @@ function procesarTexto(accion) {
             }
         }
 
-        txt_res.value = cadena;
+        txt_res.textContent = cadena;
     }
 }
